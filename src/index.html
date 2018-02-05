@@ -10,40 +10,85 @@
 	<link rel="stylesheet" href="/css/styles.css">
 
    <title>Trident Technologies Nigeria</title>
-    <script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
-<script type="text/javascript" src="fadeslideshow.js"> </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- optional touchswipe file to enable swipping to navigate slideshow -->
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+
+<style>
+
+#fadeshow4 .gallerylayer img{ /* make all images inside fadeshow4 scale to 100% of slideshow width */
+width: 100%;
+height: auto;
+}
+
+</style>
+
+<script type="text/javascript" src="js/fadeslideshow.js">
+
+
+
+</script>
+</script><script language ="JavaScript"> function goToURL() { window.location = "http://www.tridentelect.com/trainingcourses.html"; } 
+
+function newWindow1(){
+window.open("kitTopics/generalenquiry.html");}
+function newWindow2(){
+window.open("https://www.youtube.com/embed/qrejiFfoWiY","","height=420, width=315");}
+
+</script>
 
 <script type="text/javascript">
 
 var mygallery=new fadeSlideShow({
   wrapperid: "fadeshow1", //ID of blank DIV on page to house Slideshow
-  dimensions: ['100%', 175], //width/height of gallery in pixels. Should reflect dimensions of largest image
+  dimensions: [250, 180], //width/height of gallery in pixels. Should reflect dimensions of largest image
   imagearray: [
-    ["images/autocad.jpg"],
-    ["images/BAN6.jpg"],
-    ["images/excel.jpg"],
-    ["images/hands_on.jpg"] //<--no trailing comma after very last image element!
+    ["http://www.dynamicdrive.com/dynamicindex4/pool.jpg"],
+    ["http://www.dynamicdrive.com/dynamicindex4/cave.jpg"],
+    ["http://www.dynamicdrive.com/dynamicindex4/fruits.jpg"],
+    ["http://www.dynamicdrive.com/dynamicindex4/dog.jpg"] //<--no trailing comma after very last image element!
   ],
   displaymode: {type:'auto', pause:2500, cycles:0, wraparound:false},
   persist: false, //remember last viewed slide and recall within same session?
-  fadeduration: 2000, //transition duration (milliseconds)
+  fadeduration: 500, //transition duration (milliseconds)
   descreveal: "always",
   togglerid: ""
 })
 
 
-
-</script> 
-<script type="text/javascript">
+var mygallery=new fadeSlideShow({
+  wrapperid: "fadeshow1", //ID of blank DIV on page to house Slideshow
+  dimensions: [120, 136], //width/height of gallery in pixels. Should reflect dimensions of largest image
+  imagearray: [
+  ["img/NAFDAC.jpg"],
+  ["img/m_b.jpg"],
+  ["img/mod.jpg"],
+  ["img/Philips.jpg"],
+    ["img/YCT.jpg"],
+    ["img/LCC.jpg"],
+  ["img/ECN.jpg"],
+  ["img/Army.jpg"],
+  ["img/KFC.jpg"],
+    ["img/ede.jpg"],
+    ["img/ibadan.jpg"],
+    
+     //<--no trailing comma after very last image element!
+  ],
+  displaymode: {type:'auto', pause:1000, cycles:0, wraparound:false},
+  persist: false, //remember last viewed slide and recall within same session?
+  fadeduration: 0, //transition duration (milliseconds)
+  descreveal: "ondemand",
+  togglerid: ""
+})
 
 
 var mygallery=new fadeSlideShow({
   wrapperid: "fadeshow2", //ID of blank DIV on page to house Slideshow
-  dimensions: ['100%', 220], //width/height of gallery in pixels. Should reflect dimensions of largest image
+  dimensions: [137, 220], //width/height of gallery in pixels. Should reflect dimensions of largest image
   imagearray: [
-    ["images/cctv_21.jpg"],
-  ["images/excel_1.JPG"],
-  ["images/Inst_1.jpg"],
+    ["img/cctv_21.jpg"],
+  ["img/excel_1.jpg"],
+  ["img/Inst_1.jpg"],
   
   
   
@@ -57,37 +102,44 @@ var mygallery=new fadeSlideShow({
   togglerid: ""
 })
 
-</script>
-<script type="text/javascript">
-
-
 var mygallery=new fadeSlideShow({
-  wrapperid: "fadeshow0", //ID of blank DIV on page to house Slideshow
-  dimensions: [120, 136], //width/height of gallery in pixels. Should reflect dimensions of largest image
+  wrapperid: "fadeshow", //ID of blank DIV on page to house Slideshow
+  dimensions: [650, 170], //width/height of gallery in pixels. Should reflect dimensions of largest image
   imagearray: [
-  ["images/NAFDAC.jpg"],
-  ["images/m_b.jpg"],
-  ["images/mod.jpg"],
-  ["images/Philips.jpg"],
-    ["images/YCT.jpg"],
-    ["images/LCC.jpg"],
-  ["images/ECN.jpg"],
-  ["images/Army.jpg"],
-  ["images/KFC.jpg"],
-    ["images/ede.jpg"],
-    ["images/ibadan.jpg"],
+  ["img/Inv_3.jpg"],
+  ["img/projects_2.jpg"],
+  ["img/Solar_banner.jpg"],
+  ["img/BAN6.jpg"],
+  ["img/autocad.jpg"],
+  ["img/facility.jpg"],
+  ["img/interactive.jpg"],
+  ["img/hands_on.jpg"],
+  ["img/matlab.jpg"],
+  ["img/excel.jpg"],
+  
     
      //<--no trailing comma after very last image element!
   ],
-  displaymode: {type:'auto', pause:1000, cycles:0, wraparound:false},
+  displaymode: {type:'auto', pause:8500, cycles:0, wraparound:false},
   persist: false, //remember last viewed slide and recall within same session?
-  fadeduration: 0, //transition duration (milliseconds)
+  fadeduration: 2000, //transition duration (milliseconds)
   descreveal: "ondemand",
   togglerid: ""
 })
-
 </script>
+<script type="text/javascript">
 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32767501-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> 
   </head>
   <body>
   
@@ -115,7 +167,22 @@ document.write(today);
 //  End -->
 </script></div>
   
-
+<script language ="javascript">
+function newWindow3(){
+window.open("https://www.youtube.com/embed/ajVYpJ1lZ_Y","","height=430, width=500");}
+function newWindow5(){
+window.open("https://www.youtube.com/embed/02ltoZJDXys","","height=430, width=500");}
+function newWindow2(){
+window.open("https://www.youtube.com/embed/qrejiFfoWiY","","height=430, width=500");}
+function newWindow6(){
+window.open("https://www.youtube.com/embed/CDJZIzatvfk","","height=430, width=500");}
+function newWindow10(){
+window.open("https://www.youtube.com/embed/TZ-vrHHPA24","","height=430, width=500");}
+function newWindow11(){
+window.open("https://www.youtube.com/embed/YbdSmoiDLT8","","height=430, width=500");}
+function newWindow12(){
+window.open("https://www.youtube.com/embed/N6G-Ci6Nebk","","height=430, width=500");}
+</script>
 </div>
   
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark h-30 sticky-top ">
@@ -210,49 +277,15 @@ document.write(today);
 
 
 </p>
-<p class="pl-0 pr-0" >
 
-<figure class="figure ">
-  <img  src="img/cctv_21.jpg"  >
-  
-</figure>
 
-</p>
-
+<div id="fadeshow2" class="p-0"></div>
+<div id="fadeshow1"></div>
 
   </div>
   <div class="col-md-7 col-sm-12 mr-0 ml-0 p-0">
-  <div id="demo" class="carousel slide" data-ride="carousel">
-
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="img-fluid caroimage" src="img/autocad.jpg" alt="Los Angeles">
-    </div>
-    <div class="carousel-item">
-      <img class="img-fluid caroimage" src="img/inv.jpg" alt="Chicago">
-    </div>
-    <div class="carousel-item">
-      <img class="img-fluid caroimage" src="img/proj.jpg" alt="New York">
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-
-</div>
+    <div id="fadeshow"></div>
+ 
 <div class='row  pt-1'>
 <div class='col-sm-12 col-md-6 icon-dark'>
  <div id="scorners"><strong>Home</strong></div>
@@ -352,42 +385,54 @@ power storage. Our deep Cycle batteries ensure  optimisation of your Inverter.</
   
   <div class="col-12 col-md-auto d-none d-md-block pr-0">
    <!-- Start carousel -->
-  <div id="demo" class="carousel slide" data-ride="carousel">
+ 
+ <script type="text/javascript">
 
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
+var slideimages = new Array() // create new array to preload images
+slideimages[0] = new Image() // create new instance of image object
+slideimages[0].src = "img/TDC.jpg" // set image src property to image path, preloading image in the process
+slideimages[1] = new Image()
+slideimages[1].src = "img/TDC1.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "img/TDC2.jpg"
+slideimages[3] = new Image()
+slideimages[3].src = "img/TDC3.jpg"
+slideimages[4] = new Image()
+slideimages[4].src = "img/Inverter_1.jpg"
+slideimages[5] = new Image()
+slideimages[5].src = "img/Inverter_5.jpg"
+slideimages[6] = new Image()
+slideimages[6].src = "img/Inverter_6.jpg"
+slideimages[7] = new Image()
+slideimages[7].src = "img/Inverter_7.jpg"
+slideimages[8] = new Image()
+slideimages[8].src = "img/Inverter_8.jpg"
+slideimages[9] = new Image()
+slideimages[9].src = "img/Inverter_9.jpg"
+</script>
 
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="img-fluid" src="img/invs.jpg" alt="Los Angeles">
-    </div>
-    <div class="carousel-item">
-      <img class="img-fluid" src="img/driv.jpg" alt="Chicago">
-    </div>
-    <div class="carousel-item">
-      <img class="img-fluid" src="img/drivs.jpg" alt="New York">
-    </div>
-  </div>
+<script language ="javascript">
+function newWindow7(){
+window.open("kitTopics/training_bonus.html","","height=430, width=600");}
 
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
+function newWindow4(){
+window.open("kitTopics/distance_learning.html","","height=430, width=600");}
+</script>
 
-</div>
+<div id="trending">
+<a href="javascript:slidelink()">
+<img src="img/TDC.jpg" id="slide"  /></a></div>
 
- <!-- End carousel -->
+            
+          
  <p>
  <figure class="figure pl-0 pr-1 ">
-  <img src="img/training_bonus.jpg" class="figure-img mw-100 " >
+  <a href="javascript:newWindow7()">
+
+
+<img src="img/training_bonus.jpg"  /></a>
+                      
+
   
 </figure>
  
@@ -397,7 +442,10 @@ power storage. Our deep Cycle batteries ensure  optimisation of your Inverter.</
 <p>
 
  <figure class="figure pl-0 pr-1 pt-0">
-  <img src="img/Online2.jpg" class="figure-img mw-100 " >
+    <tr>
+  <a href="javascript:newWindow4()">
+  <img src="img/Online2.jpg" /></a>
+                      </tr>
   
 </figure>
 
@@ -407,7 +455,37 @@ power storage. Our deep Cycle batteries ensure  optimisation of your Inverter.</
 
 </div>
   
-  
+  <script type="text/javascript">
+
+//variable that will increment through the images
+var step=0
+var whichimage = 0
+
+function slideit(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide').src = slideimages[step].src
+ whichimage = step
+ if (step<9)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ setTimeout("slideit()",3500)
+}
+
+slideit()
+function slidelink(){
+ if (whichimage == 0)
+  window.location = "driving_school.php"
+ else if (whichimage == 1)
+  window.location = "driving_school.php"
+ else if (whichimage == 2)
+  window.location = "http://www.tridentelect.com/driving_school.php"
+}
+
+</script>
   </div>
 </div>
 	
@@ -417,5 +495,6 @@ power storage. Our deep Cycle batteries ensure  optimisation of your Inverter.</
     <script src="/js/jquery.min.js"></script>
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" data-cfasync="false">(function () { var done = false;var script = document.createElement("script");script.async = true;script.type = "text/javascript";script.src = "https://app.purechat.com/VisitorWidget/WidgetScript";document.getElementsByTagName("HEAD").item(0).appendChild(script);script.onreadystatechange = script.onload = function (e) {if (!done && (!this.readyState || this.readyState == "loaded" || this.readyState == "complete")) {var w = new PCWidget({ c: "bb9977a1-72bf-4e1e-adb8-f315f2bc8831", f: true });done = true;}};})();</script>
   </body>
 </html>
