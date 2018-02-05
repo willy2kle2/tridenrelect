@@ -1,0 +1,95 @@
+.container-fluid {
+   max-width:1150px;
+}
+
+
+$font-size-base: 0.799rem;
+$font-family-sans-serif: "Raleway", Roboto, "Helvetica Neue", Arial, sans-serif;
+#rcorners {
+    border-radius: 2em 2em 0em 0em;
+    background: #ddd;
+    padding: 5px;
+   
+}
+.accord{background: #ddd}
+#scorners {
+    border-radius: 0em;
+    background: #C0C0C0;
+    padding: 5px;
+   
+}
+.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+}
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067"; 
+}
+$bg-color: #e8e5df;
+
+$body-bg: $bg-color;
+$hx-color: #333;
+.headerx{
+
+  background-color:$bg-color;
+}
+.caroimage{
+max-height: 185px
+
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+@import "node_modules/bootstrap/scss/bootstrap";
+img{max-width:100%;}
+
+.my-list {
+    width: 100%;
+    padding: 0 10px;
+    border: 1px solid #f5efef;
+    float: left;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 2px 3px 0px #e4d8d8;
+    position:relative;
+    overflow:hidden;
+}
+.my-list h3{
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid #ccc4c4;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    }
+	.my-list span{float:left;font-weight: bold;}
+	.my-list span:last-child{float:right;}
+	.my-list .offer{
+    width: 100%;
+    float: left;
+    margin: 5px 0;
+    
+    margin-top: 5px;
+    padding-top: 5px;
+    
+    }
+	.detail {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    text-align: center;
+    background: #fff;height: 100%;width:100%;
+	
+}
+	
